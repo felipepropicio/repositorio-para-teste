@@ -45,6 +45,14 @@ self.addEventListener('fetch', (event) => {
   // ver o comentário do topo.
   if (url.origin !== self.location.origin) return;
 
+  // O ARQUIVO DE VERSÃO NUNCA É GUARDADO. Ele existe para responder "tem
+  // versão nova?", e servi-lo do cache seria perguntar exatamente à peça que
+  // está guardando a versão velha — a resposta seria sempre "não".
+  if (url.pathname.endsWith('/versao.json')) {
+    event.respondWith(fetch(req, { cache: 'no-store' }));
+    return;
+  }
+
   // Navegação (abrir ou recarregar o app): rede primeiro, para o usuário
   // receber a versão nova assim que houver rede; cache quando não houver.
   if (req.mode === 'navigate') {
