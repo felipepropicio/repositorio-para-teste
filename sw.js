@@ -1,4 +1,4 @@
-/* Service worker do Aplica-es.
+/* Service worker do Pulveriza Br.
  *
  * POR QUE ELE EXISTE. O aplicativo guardava os dados do Aplicador no
  * armazenamento do aparelho e mesmo assim NÃO abria sem internet: ao fechar
