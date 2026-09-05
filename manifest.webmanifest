@@ -1,0 +1,12 @@
+{
+  "name": "Aplica-es",
+  "short_name": "Aplica-es",
+  "description": "Gestão de aplicações químicas na soja",
+  "start_url": "/repositorio-para-teste/",
+  "scope": "/repositorio-para-teste/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F5F6F4",
+  "theme_color": "#2E5E3A",
+  "icons": []
+}
